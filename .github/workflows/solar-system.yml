@@ -84,6 +84,3 @@ jobs:
             name: Code-Coverage-Result
             path: coverage
             rentention-days: 5
-          
-        
-        
