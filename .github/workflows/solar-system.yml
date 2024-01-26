@@ -36,7 +36,7 @@ jobs:
           uses: actions/cache@v3
           with:
             path: node_modules
-            key: ${{ runner.os }}-node-modules-${{ hashFiles('package-log.json') }} ##hasFile -> always checks new content if there's a difference it invalidates the cache
+            key: ${{ runner.os }}-node-modules-${{ hashFiles('package-lock.json') }} ##hasFile -> always checks new content if there's a difference it invalidates the cache
 
         - name: Install Dependencies
           run: npm install
@@ -69,7 +69,7 @@ jobs:
           uses: actions/cache@v3
           with:
             path: node_modules
-            key: ${{ runner.os }}-node-modules-${{ hashFiles('package-log.json') }}    
+            key: ${{ runner.os }}-node-modules-${{ hashFiles('package-lock.json') }}    
 
         - name: Install Dependencies
           run: npm install 
