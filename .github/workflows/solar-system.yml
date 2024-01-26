@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main:
+      - main
       - 'feature/*'
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
           uses: actions/checkout@v4
         
         - name: Setup NodeJS Version - 18
-          users: actions/setup-node@v4
+          uses: actions/setup-node@v4
           with:
             node-version: 18
         
